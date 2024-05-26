@@ -1,0 +1,19 @@
+
+.container {
+    display: flex;
+    align-items: center; /* אמצע האנכי */
+    width: 50%; /* רוחב מלא של העמוד */
+    position: absolute;
+    top: 50%; /* מיקום אנכי באמצע */
+    transform: translateY(-50%); /* הצפנה לאמצע */
+}
+
+.container-right {
+    justify-content: flex-end; /* תיקון לצד ימין */
+    right: 30px; /* הצגת הקומפוננטה בצד הימני של העמוד */
+}
+
+.container-left {
+    justify-content: flex-start; /* תיקון לצד שמאל */
+    left: 30px; /* הצגת הקומפוננטה בצד השמאלי של העמוד */
+}
