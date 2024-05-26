@@ -1,10 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Position } from '../../models/position';
-import { PositionEmployeePostModel } from '../../../employee/models/position-employee-post-model';
 import { PositionService } from '../../position.service';
-import { PositionPostModel } from '../../models/positionPostModel';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 @Component({

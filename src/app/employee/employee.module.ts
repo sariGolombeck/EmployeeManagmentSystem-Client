@@ -1,11 +1,11 @@
 
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmployeesComponent } from './components/get-employees/employees/employees.component';
 import { EmployeeRoutingModule } from './employee-routes.module';
 import { RouterModule } from '@angular/router';
 import { EmployeeService } from './employee.service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -15,13 +15,11 @@ import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { ActivatedRoute } from '@angular/router';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { DisplayDetailsAndPositionsComponent } from './components/update/display-details-and-positions/display-details-and-positions.component';
 import {
-  FormBuilder,
-  Validators,
+
   FormsModule,
   ReactiveFormsModule,
 } from '@angular/forms';
@@ -29,32 +27,19 @@ import { MatPseudoCheckbox } from '@angular/material/core';
 import { MatSelect } from '@angular/material/select';
 import { MatOption } from '@angular/material/core';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import MatRadioModule from '@angular/material/radio';
-import { MatSlideToggle } from '@angular/material/slide-toggle';
-import { NgbDatepicker } from '@ng-bootstrap/ng-bootstrap';
-import { NgbDate } from '@ng-bootstrap/ng-bootstrap';
-import { DateAdapter } from '@angular/material/core';
-import { DatepickerViewModel } from '@ng-bootstrap/ng-bootstrap/datepicker/datepicker-view-model';
-
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core'; // נוסיף גם עבור MatNativeDateModule
 import _MatStepperIntl from '@angular/material/stepper';
-import { MatAccordion } from '@angular/material/expansion';
 import { DateOnlyPipe } from '../date-pipe/date-pipe';
 import {
-  MatDialog,
   MatDialogActions,
   MatDialogClose,
   MatDialogContent,
   MatDialogModule,
-  MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
 import { UpdateEmployeeComponent } from './components/update/update-employee/update-employee.component';
-import { from } from 'rxjs';
-import { MomentDateAdapter } from '@angular/material-moment-adapter'; // Optional for Moment.js
 import { PositionService } from '../position/position.service';
 import { MatRadioButton } from '@angular/material/radio';
 import { CdkStepperModule } from '@angular/cdk/stepper';
@@ -66,7 +51,7 @@ import { AddEmployeeComponent } from './components/add/add-employee/add-employee
 import { ConfirmationDialogComponent } from './components/update/confirmation-dialog.component/save-editing-dialog.component';
 import { AuthService } from '../register/auth.service';
 import { AuthGuard } from '../auth-guard';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import {  MatSnackBarModule } from '@angular/material/snack-bar';
 @NgModule({
 declarations: [ConfirmationDialogComponent,DisplayDetailsAndPositionsComponent, DateOnlyPipe, DeleteEmployeeConfirmationDialogComponent, PositionSelectionComponent, UpdateEmployeeComponent, EditEmployeePositionComponent, PositionEmployeeTableComponent, EmployeesComponent, AddEmployeeComponent],
   imports: [

@@ -1,0 +1,13 @@
+{
+  "routes": [
+    "/employees",
+    "/employees/add-employee",
+    "/employees/employees",
+    "/home",
+    "/login",
+    "/logout",
+    "/positions",
+    "/positions/add-position",
+    "/positions/positions"
+  ]
+}

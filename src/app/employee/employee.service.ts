@@ -3,8 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Employee } from './models/employee';
 import { PositionEmployeeDto } from './models/position-employee-dto';
-import { Observable, catchError, of, throwError } from 'rxjs';
-import { PositionEmployeePostModel } from './models/position-employee-post-model';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })

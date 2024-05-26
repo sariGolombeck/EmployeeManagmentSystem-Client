@@ -3,10 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import { MatLabel } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
-import {   HttpHandler, HttpHeaderResponse } from '@angular/common/http';
-
 import { User } from '../user';
 import { AuthService } from '../auth.service';
 import { Location } from '@angular/common';

@@ -1,10 +1,8 @@
 
 import { Routes, RouterModule } from '@angular/router';
-import { EmployeeModule } from './employee/employee.module';
 import {  HomePageComponent } from './home-page/home-page.component';
 import { NgModule } from '@angular/core';
 import { LoginComponent } from './register/login/login.component';
-import { PositionModule } from './position/position.module';
 import { LogoutComponent } from './register/logout/logout.component';
 export const routes: Routes = [
   { path: 'employees', loadChildren: () => import('./employee/employee.module').then(c => c.EmployeeModule) },
